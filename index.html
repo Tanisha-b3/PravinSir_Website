@@ -21,21 +21,20 @@
     
 
     <!-- Desktop Menu -->
-    <div class="nav-links">
-      <button onclick="goToSection('home')">Home</button>
+<div class="nav-links">
+  <a href="#home">Home</a>
 
-      <a href="https://university.pravinmishra.in/learn" target="_blank">University</a>
+  <a href="https://university.pravinmishra.in/learn" target="_blank">University</a>
 
-      <a href="https://blog.pravinmishra.com/" target="_blank">Blog</a>
+  <a href="https://blog.pravinmishra.com/" target="_blank">Blog</a>
 
-      <button onclick="goToSection('book')">Book</button>
+  <a href="#book">Book</a>
 
-      <button onclick="goToSection('courses')">Courses</button>
+  <a href="#courses">Courses</a>
 
-      <button class="contact-btn" onclick="goToSection('contact')">
-        Contact
-      </button>
-    </div>
+  <a href="#contact" class="contact-btn">Contact</a>
+</div>
+
 
     <div class="hamburger" onclick="toggleMenu()">
       ☰
@@ -325,25 +324,26 @@
 
   </div>
 </section>
-
 <!-- BOOKS -->
-<section id="book" class="books fade-section">
+<section id="book" class="books">
 
-  <!-- Glow blobs -->
-  <div class="glow glow-yellow"></div>
-  <div class="glow glow-blue"></div>
+  <!-- Decorative blobs -->
+  <div class="glow glow-yellow" aria-hidden="true"></div>
+  <div class="glow glow-blue" aria-hidden="true"></div>
 
-  <h2 class="books-title">
-    Featured Books
-    <span class="underline"></span>
-  </h2>
+  <header class="books-header">
+    <h2 class="books-title">
+      Featured Books
+      <span class="underline"></span>
+    </h2>
+  </header>
 
   <div class="books-wrapper">
 
     <!-- Book 1 -->
-    <div class="book-row fade-section">
+    <article class="book-row">
       <div class="book-img">
-        <img src="images/Git.jpg" alt="Book">
+        <img src="images/Git.jpg" alt="Ultimate Git and GitHub book cover" loading="lazy">
       </div>
 
       <div class="book-content">
@@ -352,14 +352,14 @@
         <p class="signature">“P. Mishra”</p>
         <p class="author">— Pravin Mishra</p>
         <div class="rating">⭐ 4.9 <span>(14 reviews)</span></div>
-        <a href="https://www.amazon.in/dp/8197223831" target="_blank">Get Your Copy →</a>
+        <a href="https://www.amazon.in/dp/8197223831" target="_blank" rel="noopener">Get Your Copy →</a>
       </div>
-    </div>
+    </article>
 
-    <!-- Book 2 (reverse layout) -->
-    <div class="book-row reverse fade-section">
+    <!-- Book 2 -->
+    <article class="book-row reverse">
       <div class="book-img">
-        <img src="images/awsCloud.jpg" alt="Book">
+        <img src="images/awsCloud.jpg" alt="Cloud Computing with AWS book cover" loading="lazy">
       </div>
 
       <div class="book-content">
@@ -368,14 +368,14 @@
         <p class="signature">“P. Mishra”</p>
         <p class="author">— Pravin Mishra</p>
         <div class="rating">⭐ 4.3 <span>(21 reviews)</span></div>
-        <a href="https://www.amazon.in/dp/1484291719" target="_blank">Get Your Copy →</a>
+        <a href="https://www.amazon.in/dp/1484291719" target="_blank" rel="noopener">Get Your Copy →</a>
       </div>
-    </div>
+    </article>
 
     <!-- Book 3 -->
-    <div class="book-row fade-section">
+    <article class="book-row">
       <div class="book-img">
-        <img src="images/Devops.jpg" alt="Book">
+        <img src="images/Devops.jpg" alt="Mastering DevOps book cover" loading="lazy">
       </div>
 
       <div class="book-content">
@@ -384,59 +384,60 @@
         <p class="signature">“P. Mishra”</p>
         <p class="author">— Pravin Mishra</p>
         <div class="rating">⭐ 5.0 <span>(1 review)</span></div>
-        <a href="https://www.amazon.in/dp/9356484880" target="_blank">Get Your Copy →</a>
+        <a href="https://www.amazon.in/dp/9356484880" target="_blank" rel="noopener">Get Your Copy →</a>
       </div>
-    </div>
+    </article>
 
   </div>
 </section>
+
 
 
 <!-- LEARNERS TRUST -->
 <section id="community" class="trust-section">
 
   <!-- Header -->
-  <div class="trust-header">
+  <header class="trust-header">
     <span>Community</span>
     <h2>Trusted by Learners Worldwide</h2>
     <p>
       A growing global community of cloud aspirants, engineers, and professionals
       learning with Pravin Mishra.
     </p>
-  </div>
+  </header>
 
   <!-- Cards -->
   <div class="trust-grid">
 
-    <a href="https://www.amazon.in/s?k=Pravin+Mishra&i=stripbooks" target="_blank" class="trust-card">
+    <a href="https://www.amazon.in/s?k=Pravin+Mishra&i=stripbooks" target="_blank" rel="noopener" class="trust-card">
       <i class="fa-brands fa-amazon amazon"></i>
       <h3>Amazon Author Page</h3>
       <p>Explore all books written by Pravin</p>
       <div class="line"></div>
     </a>
 
-    <a href="https://www.youtube.com/@awswithpravinmishra" target="_blank" class="trust-card">
+    <a href="https://www.youtube.com/@awswithpravinmishra" target="_blank" rel="noopener" class="trust-card">
       <i class="fa-brands fa-youtube youtube"></i>
       <h3>13K+ YouTube Subscribers</h3>
       <p>Weekly hands-on cloud tutorials</p>
       <div class="line"></div>
     </a>
 
-    <a href="https://www.linkedin.com/in/pravin-mishra-aws-trainer/" target="_blank" class="trust-card">
+    <a href="https://www.linkedin.com/in/pravin-mishra-aws-trainer/" target="_blank" rel="noopener" class="trust-card">
       <i class="fa-brands fa-linkedin linkedin"></i>
       <h3>20K+ LinkedIn Followers</h3>
       <p>Daily cloud insights & updates</p>
       <div class="line"></div>
     </a>
 
-    <a href="https://www.instagram.com/awspravinmishra/" target="_blank" class="trust-card">
+    <a href="https://www.instagram.com/awspravinmishra/" target="_blank" rel="noopener" class="trust-card">
       <i class="fa-brands fa-instagram instagram"></i>
       <h3>2K+ Instagram Followers</h3>
       <p>Behind the scenes of cloud teaching</p>
       <div class="line"></div>
     </a>
 
-    <a href="https://github.com/pravinmishraaws" target="_blank" class="trust-card">
+    <a href="https://github.com/pravinmishraaws" target="_blank" rel="noopener" class="trust-card">
       <i class="fa-solid fa-book book"></i>
       <h3>Author of 3 Books</h3>
       <p>Published on Apress & Amazon</p>
@@ -445,37 +446,32 @@
 
   </div>
 
-  <!-- Stats -->
+  <!-- Stats (JS removed, real values shown) -->
   <div class="trust-stats">
     <div>
-      <h3 class="counter" data-target="33000">0</h3>
+      <h3>33K+</h3>
       <p>Total Followers</p>
     </div>
     <div>
-      <h3 class="counter" data-target="13000">0</h3>
+      <h3>13K+</h3>
       <p>YouTube Subs</p>
     </div>
     <div>
-      <h3 class="counter" data-target="20000">0</h3>
+      <h3>20K+</h3>
       <p>LinkedIn Network</p>
     </div>
     <div>
-      <h3 class="counter" data-target="3">0</h3>
+      <h3>3</h3>
       <p>Published Books</p>
     </div>
   </div>
 
 </section>
 
-<!-- Font Awesome -->
-
-
-<!-- CONTACT -->
 <section id="contact" class="contact-section">
 
   <div class="contact-container">
 
-    <!-- Header -->
     <div class="contact-header">
       <span>Get In Touch</span>
       <h2>Let's Start Your Cloud Journey</h2>
